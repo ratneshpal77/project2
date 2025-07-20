@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #1e88e5;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product button {
+  margin-top: 10px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-popup {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.cart-popup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.cart-popup li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}

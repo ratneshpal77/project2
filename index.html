@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopNow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🛍️ ShopNow</h1>
+    <button id="cartButton">🛒 Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <div class="product-list">
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>Smart Watch</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart('Smart Watch', 1999)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <h3>Wireless Headphones</h3>
+        <p>₹1499</p>
+        <button onclick="addToCart('Wireless Headphones', 1499)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <h3>Bluetooth Speaker</h3>
+        <p>₹899</p>
+        <button onclick="addToCart('Bluetooth Speaker', 899)">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <div id="cartPopup" class="cart-popup">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p><strong>Total: ₹<span id="totalAmount">0</span></strong></p>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
